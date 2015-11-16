@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "styleguide --parsers \"{ postcss: 'postcss' }\" --kss-source \"src/**/*.css\" --style-source \"dist/**/*.css\" --output styleguide --watch --server"
+    "watch": "node build-css.js && styleguide --parsers \"{ css: 'postcss' }\" --kss-source \"src/**/*.css\" --style-source \"dist/**/*.css\" --output styleguide --watch --server"
   },
   "keywords": [],
   "author": "",

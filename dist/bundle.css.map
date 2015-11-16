@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/style.css"],"names":[],"mappings":"AAAA;;;;GAIG;;AAGF;;IACC,uBAAuB;CACvB","file":"bundle.css","sourcesContent":["/**\n * Test component\n *\n * Styleguide 1\n */\n\n.test-component {\n\t&::before {\n\t\tcontent: 'Should work';\n\t}\n}\n"]}

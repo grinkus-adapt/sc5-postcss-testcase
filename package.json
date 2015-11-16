@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node build-css.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node build-css.js && styleguide --parsers \"{ css: 'postcss' }\" --kss-source \"src/**/*.css\" --style-source \"dist/**/*.css\" --output styleguide --watch --server"
+    "watch": "npm run build && styleguide --parsers \"{ css: 'postcss' }\" --kss-source \"src/**/*.css\" --style-source \"dist/**/*.css\" --output styleguide --watch --server"
   },
   "keywords": [],
   "author": "",
